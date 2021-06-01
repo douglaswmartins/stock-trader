@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from './views/Home'
-import Actions from './views/Actions'
-import Portfolio from './views/Portfolio'
+import Actions from './views/actions/Actions'
+import Portfolio from './views/portfolio/Portfolio'
 
 Vue.use(VueRouter)
 
