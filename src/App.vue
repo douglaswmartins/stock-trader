@@ -15,9 +15,8 @@ import Header from './template/Header';
 
 export default {
   components: {Header},
-  data() {
-    return {
-    }
+  created() {
+    this.$store.dispatch('initStocks')
   },
 };
 
