@@ -47,7 +47,7 @@
       </v-menu>
 
       <div class="text-uppercase px-4 align-self-center body-2">
-        saldo: R$ 10,000
+        saldo: R$ {{ funds }}
       </div>
 
     </v-toolbar-items>
@@ -66,6 +66,11 @@ export default {
       ]
     }
   },
+  computed: {
+    funds() {
+      return this.$store.getters.funds
+    }
+  }
 }
 </script>
 

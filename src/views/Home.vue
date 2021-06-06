@@ -20,15 +20,19 @@
     </v-sheet>
 
     <v-divider class="my-4" />
-    <p class="display-1"><strong>Seu Saldo:</strong> {{ funds }}</p>
+    <p class="display-1"><strong>Seu Saldo:</strong> R$ {{ funds }}</p>
 
   </div>
 </template>
 
 <script>
-  export default {
-    
+export default {
+  computed: {
+    funds() {
+      return this.$store.getters.funds
+    }
   }
+}
 </script>
 
 <style scoped>
