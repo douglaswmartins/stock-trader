@@ -2,7 +2,7 @@
   <v-col cols="12" md="6" lg="4">
     <v-card class="green darken-3 white--text">
       <v-card-title class="headline">
-        <strong>{{stock.name}} <small>(Preço: R$ {{stock.price}})</small></strong>
+        <strong>{{stock.name}} <small>(Preço: {{ stock.price | currency }})</small></strong>
       </v-card-title>
     </v-card>
     <v-card>

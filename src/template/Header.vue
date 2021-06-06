@@ -47,7 +47,7 @@
       </v-menu>
 
       <div class="text-uppercase px-4 align-self-center body-2">
-        saldo: R$ {{ funds }}
+        saldo: {{ funds | currency }}
       </div>
 
     </v-toolbar-items>
