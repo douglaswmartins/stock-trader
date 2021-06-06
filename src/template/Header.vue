@@ -21,7 +21,7 @@
     <v-spacer></v-spacer>
 
     <v-toolbar-items>
-      <v-btn text>
+      <v-btn text @click="endDay">
         Finalizar dia
       </v-btn>
 
@@ -56,6 +56,8 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   data() {
     return {
@@ -69,6 +71,12 @@ export default {
   computed: {
     funds() {
       return this.$store.getters.funds
+    }
+  },
+  methods: {
+    ...mapActions(['randomizeStocks']),
+    endDay() {
+      this.randomizeStocks()
     }
   }
 }
