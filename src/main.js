@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import './plugins/axios'
 import './style.css'
 
+import './plugins/axios'
 import store from './store/store'
 import router from './router'
 import vuetify from './plugins/vuetify'
@@ -14,8 +14,8 @@ Vue.filter('currency', value => {
 })
 
 new Vue({
-  vuetify,
-  router,
   store,
+  router,
+  vuetify,
   render: h => h(App)
 }).$mount('#app')
