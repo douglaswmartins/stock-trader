@@ -37,7 +37,7 @@
         </template>
 
         <v-list>
-          <v-list-item>
+          <v-list-item @click="saveData">
             <v-list-item-title>Salvar Dados</v-list-item-title>
           </v-list-item>
           <v-list-item>
@@ -77,6 +77,11 @@ export default {
     ...mapActions(['randomizeStocks']),
     endDay() {
       this.randomizeStocks()
+    },
+    saveData() {
+      const { funds, stockPortifolio, stocks } = this.$store.getters
+
+      this.$http.put('data.json', { funds, stockPortifolio, stocks })
     }
   }
 }
