@@ -15,7 +15,7 @@ import Stock from './components/Stock'
 export default {
   components: { Stock },
   computed: {
-    ...mapGetters({ stocks: 'stockPortifolio' })
+    ...mapGetters({ stocks: 'stockPortfolio' })
   }
 }
 </script>
