@@ -18,7 +18,7 @@ A aplicação poderá ser acessada pelo link: https://stock-trader-doug.netlify.
 
 ## 💻 Sobre Projeto
 
-#### Projeto desenvolvido como exemplo do curso [Curso Vue JS 2 - O Guia Completo (incl. Vue Router & Vuex)](https://www.udemy.com/course/vue-js-completo/), disponibilizado na [Udemy](https://www.udemy.com/), a idéia do projeto é simular negociações e consultas de ações da bolsa de valores.
+Projeto desenvolvido como exemplo do curso [Curso Vue JS 2 - O Guia Completo (incl. Vue Router & Vuex)](https://www.udemy.com/course/vue-js-completo/), disponibilizado na [Udemy](https://www.udemy.com/), a idéia do projeto é simular negociações e consultas de ações da bolsa de valores.
 ---
 
 ## 🛠 Tecnologias & Bibliotecas
